@@ -1,0 +1,217 @@
+/* Whole page wrapper (zoom out + center) */
+.page-wrapper {
+  transform: scale(0.);
+  transform-origin: top center;
+  max-width: 3000px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #0d1117;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar with gradient background */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2d3748;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-cyan {
+  color: #22d3ee;
+}
+
+.logo-purple {
+  color: #a78bfa;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  background: rgba(17, 24, 39, 0.85);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: rgba(55, 65, 81, 0.9);
+  color: #fff;
+}
+
+.btn-active {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Grid Layout */
+.bitcoin-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .bitcoin-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Cards */
+.card {
+  background-color: #1a2234;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Section titles */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: #d1d5db;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.price-info {
+  text-align: right;
+}
+
+.price-value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #22d3ee;
+}
+
+.price-change {
+  color: #34d399;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chart-container {
+  margin-top: 20px;
+  height: 250px;
+}
+
+/* Transactions */
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+  transition: background 0.2s;
+}
+
+.transaction-item:hover {
+  background: #1f2937;
+}
+
+.tx-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tx-icon {
+  font-size: 18px;
+  background: #1f2937;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.tx-icon.buy {
+  color: #34d399;
+}
+
+.tx-icon.sell {
+  color: #f87171;
+}
+
+.tx-icon.transfer {
+  color: #60a5fa;
+}
+
+.tx-type {
+  font-weight: 500;
+  margin: 0;
+}
+
+.tx-time {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 2px 0 0;
+}
+
+.tx-right {
+  text-align: right;
+}
+
+.tx-amount {
+  font-weight: bold;
+}
+
+.tx-value {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.tx-status {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-completed {
+  color: #34d399;
+}
+
+.status-pending {
+  color: #facc15;
+}
+
+.status-failed {
+  color: #f87171;
+}
